@@ -9,15 +9,7 @@ import java.util.*;
 @Qualifier("SqlServerData")
 public class SqlServerStudentDaoImple implements StudentDao {
 
-    private static Map<Integer, Student> students;
-
-    static {
-        students = new HashMap<Integer, Student>() {
-            {
-                put(1, new Student(1, "Lucas", "Physics"));
-            }
-        };
-    }
+    private static Map<Integer, Student> students = new HashMap<Integer, Student>();
 
     @Override
     public Collection<Student> getAllStudents() {
