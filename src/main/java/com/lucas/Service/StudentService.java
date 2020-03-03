@@ -12,7 +12,7 @@ import java.util.Collection;
 public class StudentService {
 
     @Autowired
-    @Qualifier("SqlServerData")
+    @Qualifier("fakeData")
     private StudentDao studentDao;
 
     public Collection<Student> getAllStudents() {

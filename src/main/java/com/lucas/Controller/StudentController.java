@@ -3,12 +3,12 @@ package com.lucas.Controller;
 import com.lucas.Entity.Student;
 import com.lucas.Service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/students")
 public class StudentController {
 
